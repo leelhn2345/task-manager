@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "env-cmd -f ./config/dev.env ts-node --transpile-only src/index.ts",
+    "build": "tsc",
+    "start": "env-cmd -f ./config/dev.env node dist/index.js",
     "dev": "env-cmd -f ./config/dev.env ts-node-dev --inspect --respawn --transpile-only src/index.ts"
   },
   "keywords": [],
